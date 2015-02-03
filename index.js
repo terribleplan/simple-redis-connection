@@ -6,7 +6,7 @@ module.exports = function conntectToRedis(uri) {
     var client = redis.createClient(redisURL.port || 6379, redisURL.hostname || "localhost", {
         no_ready_check: true
     });
-    if (auth !== null) {
+    if (client.auth !== null) {
         client.auth(redisURL.auth.split(":")[1]);
     }
     return client;
