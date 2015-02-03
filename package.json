@@ -1,6 +1,6 @@
 {
   "name": "simple-redis-connection",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pass in a redis URI, get back a connection object.",
   "main": "index.js",
   "scripts": {
